@@ -18,23 +18,19 @@
   }
   
   main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: block; /* Use block display for main */
     padding: 20px;
     max-width: 1200px; 
+    margin: 0 auto; /* Center the main element itself */
+    text-align: center; /* Center the grid within main */
   }
 
   /* Apply grid layout to the product container */
   #products-container {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 20px;
-    justify-content: center; 
-    max-width: 1200px; /* Set a maximum width for the grid */
-    margin: 0 auto; /* Center the grid horizontally */
+    gap: 20px; 
 }
-  
   
   .idea {
     display: flex;
